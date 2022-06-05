@@ -11,7 +11,7 @@ const AppRouter = () => {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/add' element={<FormMovie/>}/>
                 <Route path='/movies/:id' element={<MovieDetails/>}/>
-                <Route path='*' element={<Navigate to={"/"}/>}/>
+                {/* <Route path='*' element={<Navigate to={"/"}/>}/> */}
             </Routes>
         </BrowserRouter>
     )
