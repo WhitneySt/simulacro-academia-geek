@@ -8,10 +8,10 @@ const AppRouter = () => {
     return (
         <BrowserRouter>            
             <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/add' element={<FormMovie/>}/>
-                <Route path='/movies/:id' element={<MovieDetails/>}/>
-                {/* <Route path='*' element={<Navigate to={"/"}/>}/> */}
+                <Route path='/simulacro-academia-geek' element={<Home/>}/>
+                <Route path='/simulacro-academia-geek/add' element={<FormMovie/>}/>
+                <Route path='/simulacro-academia-geek/movies/:id' element={<MovieDetails/>}/>
+                <Route path='*' element={<Navigate to={"/simulacro-academia-geek"}/>}/>
             </Routes>
         </BrowserRouter>
     )
