@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/simulacro-academia-geek/static/js/main.71ece584.js",
+    "main.js": "/simulacro-academia-geek/static/js/main.e47dbad6.js",
     "index.html": "/simulacro-academia-geek/index.html",
-    "main.71ece584.js.map": "/simulacro-academia-geek/static/js/main.71ece584.js.map"
+    "main.e47dbad6.js.map": "/simulacro-academia-geek/static/js/main.e47dbad6.js.map"
   },
   "entrypoints": [
-    "static/js/main.71ece584.js"
+    "static/js/main.e47dbad6.js"
   ]
 }
