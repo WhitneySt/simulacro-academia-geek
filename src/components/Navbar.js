@@ -1,6 +1,7 @@
 import React from 'react'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { Navigate } from 'react-router-dom'
 
 const Navbar = (props) => {
     const [value, setValue] = React.useState(props.tab);
@@ -12,8 +13,8 @@ const Navbar = (props) => {
     return (
         <div>
             <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-                <Tab label="Movies Home" href="/simulacro-academia-geek" />
-                <Tab label="Add Movie" href="/simulacro-academia-geek/add" />
+                <Tab label="Movies Home" onClick={<Navigate to={"/simulacro-academia-geek"}/>} />
+                <Tab label="Add Movie" onClick={<Navigate to={"/simulacro-academia-geek/add"}/>} />
             </Tabs>
         </div>
     )
