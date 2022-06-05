@@ -27,7 +27,7 @@ const CustomCard = (props = {}) => {
             </CardContent>
             <CardActions>
                 <Button size="small">Edit</Button>
-                <Button href={`/movies/${id}`} size="small">Details</Button>
+                <Button href={`/simulacro-academia-geek/movies/${id}`} size="small">Details</Button>
                 <Button onClick={onClick} size="small">Delete</Button>
             </CardActions>
         </Card>

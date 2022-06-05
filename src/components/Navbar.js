@@ -12,8 +12,8 @@ const Navbar = (props) => {
     return (
         <div>
             <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-                <Tab label="Movies Home" href="/" />
-                <Tab label="Add Movie" href="/add" />
+                <Tab label="Movies Home" href="/simulacro-academia-geek" />
+                <Tab label="Add Movie" href="/simulacro-academia-geek/add" />
             </Tabs>
         </div>
     )
