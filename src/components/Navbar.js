@@ -1,23 +1,31 @@
 import React from 'react'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = (props) => {
-    const [value, setValue] = React.useState(props.tab);
+  const navigate = useNavigate();
+  const [value, setValue] = React.useState(props.tab);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    if (newValue === 0) {
+      navigate('/simulacro-academia-geek');
+    } 
+
+    if (newValue === 1) {
+      navigate('/add');
+    } 
   };
 
-    return (
-        <div>
-            <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-                <Tab label="Movies Home" onClick={<Navigate to={"/simulacro-academia-geek"}/>} />
-                <Tab label="Add Movie" onClick={<Navigate to={"/simulacro-academia-geek/add"}/>} />
-            </Tabs>
-        </div>
-    )
+  return (
+    <div>
+      <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
+        <Tab label="Movies Home" />
+        <Tab label="Add Movie" />
+      </Tabs>
+    </div>
+  )
 }
 
 export default Navbar

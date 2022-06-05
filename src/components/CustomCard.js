@@ -5,9 +5,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Navigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const CustomCard = (props = {}) => {
+    const navigate = useNavigate();
     const { poster, title, sinopsis, id, onClick } = props;
 
     return (
@@ -28,7 +29,7 @@ const CustomCard = (props = {}) => {
             </CardContent>
             <CardActions>
                 <Button size="small">Edit</Button>
-                <Button onClick={<Navigate to={`/simulacro-academia-geek/movies/${id}`}} size="small">Details</Button>
+                <Button onClick={() =>  navigate(`/movies/${id}`)} size="small">Details</Button>
                 <Button onClick={onClick} size="small">Delete</Button>
             </CardActions>
         </Card>
